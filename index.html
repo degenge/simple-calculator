@@ -4,11 +4,30 @@
 <head >
     <meta charset="UTF-8" >
     <title >Simple Calculator</title >
-    <link href="style.css" rel="stylesheet">
-    <script src="main.js"></script>
+    <link href="style.css" rel="stylesheet" >
 </head >
 
 <body >
+
+<label for="field_1" >Enter a number: </label >
+<input type="number" name="field_1" id="field_1" placeholder="Number..." required >
+
+<label for="operation" >Choose an operation:</label >
+<select name="operation" id="operation" >
+    <option value="+" >+</option >
+    <option value="-" >-</option >
+    <option value="*" >*</option >
+    <option value="/" >/</option >
+</select >
+
+<label for="field_2" >Enter a number: </label >
+<input type="number" name="field_2" id="field_2" placeholder="Number..." required >
+
+<button type="button" id="submit" class="favorite styled" > =</button >
+
+<p id="result" >[Result]</p>
+
+<script src="main.js" ></script >
 
 </body >
 
