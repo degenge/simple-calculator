@@ -18,6 +18,7 @@ function calculateResult() {
             break;
         case '/':
             total = eval(number_1.value) / eval(number_2.value);
+            total = Math.round((total + Number.EPSILON) * 100) / 100;
             break;
         default:
         // code block
@@ -29,4 +30,6 @@ function calculateResult() {
 
 number_1.addEventListener("change", calculateResult);
 number_2.addEventListener("change", calculateResult);
+operation.addEventListener("change", calculateResult);
+
 submit.addEventListener("click", calculateResult);

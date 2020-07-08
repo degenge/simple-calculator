@@ -2,5 +2,19 @@
     display: inline-block;
     background-color: #4a831c;
     font-weight: bold;
-    padding: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap; /* added line */
 }
